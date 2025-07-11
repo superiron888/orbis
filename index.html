@@ -21,7 +21,7 @@
 
   <!-- Company Overview & Why Choose OrbisGate as 4 Cards -->
   <section id="overview" class="px-8 py-12">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
       <!-- Who We Are Card -->
       <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col">
         <div class="flex items-center mb-4">
@@ -51,10 +51,97 @@
         </div>
         <p>Supplier network across China, Indonesia, and key manufacturing regions for cost-effective access.</p>
       </div>
+    </div>
+
+    <!-- Product Detail Section -->
+    <div class="my-10">
+      <h2 class="text-2xl font-extrabold mb-6 text-center text-blue-600">Product Detail</h2>
+      <section id="products" class="flex flex-wrap justify-center gap-8">
+        <!-- Hair Dryer Card -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 max-w-xs w-full flex flex-col items-center">
+          <img src="hairdryer.jpg" alt="Hair Dryer" class="w-40 h-40 object-contain rounded-xl mb-4">
+          <h3 class="text-xl font-bold mb-2">Model Y8</h3>
+          <div class="w-full mb-4">
+            <dl class="grid grid-cols-2 gap-x-2 gap-y-1 text-sm">
+              <dt class="font-medium">Material</dt><dd>ABS</dd>
+              <dt class="font-medium">Cord Length</dt><dd>1.95M</dd>
+              <dt class="font-medium">Packaging</dt><dd>Color Box (Gift Box)</dd>
+              <dt class="font-medium">Gross Weight</dt><dd>Standard 25.3KG, With Air Nozzle 23.5KG</dd>
+              <dt class="font-medium">Style/Color</dt><dd>Pearl White, Jazz Grey</dd>
+              <dt class="font-medium">Speed Settings</dt><dd>3 speeds, fast/slow/cool/hot adjustment</dd>
+              <dt class="font-medium">Standard Accessories</dt><dd>Manual, Air Nozzle</dd>
+              <dt class="font-medium">Frequency</dt><dd>50HZ</dd>
+              <dt class="font-medium">Power</dt><dd>2100W/2400W</dd>
+              <dt class="font-medium">Voltage</dt><dd>AC220V-240V</dd>
+              <dt class="font-medium">Overheat Protection</dt><dd>Supported</dd>
+            </dl>
+          </div>
+          <button onclick="document.getElementById('hairdryer-modal').classList.remove('hidden')" class="bg-blue-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-700">View Details</button>
+        </div>
+        <!-- Mosquito Killing Lamp Card -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 max-w-xs w-full flex flex-col items-center">
+          <img src="mosquito_lamp.jpg" alt="Mosquito Killing Lamp" class="w-40 h-40 object-contain rounded-xl mb-4">
+          <h3 class="text-xl font-bold mb-2">Mosquito Killing Lamp</h3>
+          <div class="w-full mb-4">
+            <dl class="grid grid-cols-2 gap-x-2 gap-y-1 text-sm">
+              <dt class="font-medium">Material</dt><dd>ABS</dd>
+              <dt class="font-medium">Battery Capacity</dt><dd>800mAh</dd>
+              <dt class="font-medium">Style/Color</dt><dd>Plug-in, Rechargeable / Grey, Green</dd>
+              <dt class="font-medium">Standard Accessories</dt><dd>Manual, Data Cable, Small Brush</dd>
+              <dt class="font-medium">Power</dt><dd>5W</dd>
+              <dt class="font-medium">Voltage</dt><dd>AC5V</dd>
+              <dt class="font-medium">Function</dt><dd>Plug-in: USB port, power on when connected.<br>Rechargeable: Can be powered on or used after charging, portable, with night light function.</dd>
+            </dl>
+          </div>
+          <button onclick="document.getElementById('mosquito-modal').classList.remove('hidden')" class="bg-blue-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-700">View Details</button>
+        </div>
+        <!-- Model V10 Hair Dryer Card -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 max-w-xs w-full flex flex-col items-center">
+          <img src="v10_hairdryer.jpg" alt="Model V10 Hair Dryer" class="w-40 h-40 object-contain rounded-xl mb-4">
+          <h3 class="text-xl font-bold mb-2">Model V10</h3>
+          <div class="w-full mb-4">
+            <dl class="grid grid-cols-2 gap-x-2 gap-y-1 text-sm">
+              <dt class="font-medium">Material</dt><dd>ABS</dd>
+              <dt class="font-medium">Cord Length</dt><dd>1.8M</dd>
+              <dt class="font-medium">Net/Gross Weight</dt><dd>With Air Nozzle 0.47KG/0.674KG, Standard 0.39KG/0.53KG</dd>
+              <dt class="font-medium">Style/Color</dt><dd>Blue, White, Dark Grey</dd>
+              <dt class="font-medium">Speed Settings</dt><dd>3 speeds, fast/slow/cool/hot adjustment</dd>
+              <dt class="font-medium">Frequency</dt><dd>50HZ</dd>
+              <dt class="font-medium">Power</dt><dd>2400W</dd>
+              <dt class="font-medium">Voltage</dt><dd>AC220V-240V</dd>
+              <dt class="font-medium">Overheat Protection</dt><dd>Supported</dd>
+            </dl>
+          </div>
+          <button onclick="document.getElementById('v10-modal').classList.remove('hidden')" class="bg-blue-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-700">View Details</button>
+        </div>
+        <!-- Model 6668 Hair Dryer Card -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 max-w-xs w-full flex flex-col items-center">
+          <img src="model6668.jpg" alt="Model 6668 Hair Dryer" class="w-40 h-40 object-contain rounded-xl mb-4">
+          <h3 class="text-xl font-bold mb-2">Model 6668</h3>
+          <div class="w-full mb-4">
+            <dl class="grid grid-cols-2 gap-x-2 gap-y-1 text-sm">
+              <dt class="font-medium">Material</dt><dd>ABS</dd>
+              <dt class="font-medium">Cord Length</dt><dd>1.8M</dd>
+              <dt class="font-medium">Net/Gross Weight</dt><dd>465g/675g</dd>
+              <dt class="font-medium">Style/Color</dt><dd>Silver, Apricot, Purple</dd>
+              <dt class="font-medium">Speed Settings</dt><dd>3 speeds</dd>
+              <dt class="font-medium">Standard Accessories</dt><dd>Manual, Air Nozzle</dd>
+              <dt class="font-medium">Frequency</dt><dd>50HZ</dd>
+              <dt class="font-medium">Power</dt><dd>1500W</dd>
+              <dt class="font-medium">Voltage</dt><dd>AC220V</dd>
+              <dt class="font-medium">Overheat Protection</dt><dd>Supported</dd>
+            </dl>
+          </div>
+          <button onclick="document.getElementById('model6668-modal').classList.remove('hidden')" class="bg-blue-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-700">View Details</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
       <!-- Our Value Proposition Card -->
       <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col">
         <div class="flex items-center mb-4">
-          <span class="text-2xl mr-3">🏅</span>
+          <span class="text-2xl mr-3">��</span>
           <h3 class="text-xl font-bold">Our Value Proposition</h3>
         </div>
         <div class="border-b-2 border-blue-500 w-16 mb-4"></div>
@@ -89,87 +176,6 @@
           We provide end-to-end: sourcing, negotiation, inspection, compliance, and logistics. A turnkey export solution.
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Product Category Card Section -->
-  <section id="products" class="px-8 py-12 flex flex-wrap justify-center gap-8">
-    <!-- Hair Dryer Card -->
-    <div class="bg-white rounded-2xl shadow-lg p-6 max-w-xs w-full flex flex-col items-center">
-      <img src="hairdryer.jpg" alt="Hair Dryer" class="w-40 h-40 object-contain rounded-xl mb-4">
-      <h3 class="text-xl font-bold mb-2">Model Y8</h3>
-      <div class="w-full mb-4">
-        <dl class="grid grid-cols-2 gap-x-2 gap-y-1 text-sm">
-          <dt class="font-medium">Material</dt><dd>ABS</dd>
-          <dt class="font-medium">Cord Length</dt><dd>1.95M</dd>
-          <dt class="font-medium">Packaging</dt><dd>Color Box (Gift Box)</dd>
-          <dt class="font-medium">Gross Weight</dt><dd>Standard 25.3KG, With Air Nozzle 23.5KG</dd>
-          <dt class="font-medium">Style/Color</dt><dd>Pearl White, Jazz Grey</dd>
-          <dt class="font-medium">Speed Settings</dt><dd>3 speeds, fast/slow/cool/hot adjustment</dd>
-          <dt class="font-medium">Standard Accessories</dt><dd>Manual, Air Nozzle</dd>
-          <dt class="font-medium">Frequency</dt><dd>50HZ</dd>
-          <dt class="font-medium">Power</dt><dd>2100W/2400W</dd>
-          <dt class="font-medium">Voltage</dt><dd>AC220V-240V</dd>
-          <dt class="font-medium">Overheat Protection</dt><dd>Supported</dd>
-        </dl>
-      </div>
-      <button onclick="document.getElementById('hairdryer-modal').classList.remove('hidden')" class="bg-blue-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-700">View Details</button>
-    </div>
-    <!-- Mosquito Killing Lamp Card -->
-    <div class="bg-white rounded-2xl shadow-lg p-6 max-w-xs w-full flex flex-col items-center">
-      <img src="mosquito_lamp.jpg" alt="Mosquito Killing Lamp" class="w-40 h-40 object-contain rounded-xl mb-4">
-      <h3 class="text-xl font-bold mb-2">Mosquito Killing Lamp</h3>
-      <div class="w-full mb-4">
-        <dl class="grid grid-cols-2 gap-x-2 gap-y-1 text-sm">
-          <dt class="font-medium">Material</dt><dd>ABS</dd>
-          <dt class="font-medium">Battery Capacity</dt><dd>800mAh</dd>
-          <dt class="font-medium">Style/Color</dt><dd>Plug-in, Rechargeable / Grey, Green</dd>
-          <dt class="font-medium">Standard Accessories</dt><dd>Manual, Data Cable, Small Brush</dd>
-          <dt class="font-medium">Power</dt><dd>5W</dd>
-          <dt class="font-medium">Voltage</dt><dd>AC5V</dd>
-          <dt class="font-medium">Function</dt><dd>Plug-in: USB port, power on when connected.<br>Rechargeable: Can be powered on or used after charging, portable, with night light function.</dd>
-        </dl>
-      </div>
-      <button onclick="document.getElementById('mosquito-modal').classList.remove('hidden')" class="bg-blue-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-700">View Details</button>
-    </div>
-    <!-- Model V10 Hair Dryer Card -->
-    <div class="bg-white rounded-2xl shadow-lg p-6 max-w-xs w-full flex flex-col items-center">
-      <img src="v10_hairdryer.jpg" alt="Model V10 Hair Dryer" class="w-40 h-40 object-contain rounded-xl mb-4">
-      <h3 class="text-xl font-bold mb-2">Model V10</h3>
-      <div class="w-full mb-4">
-        <dl class="grid grid-cols-2 gap-x-2 gap-y-1 text-sm">
-          <dt class="font-medium">Material</dt><dd>ABS</dd>
-          <dt class="font-medium">Cord Length</dt><dd>1.8M</dd>
-          <dt class="font-medium">Net/Gross Weight</dt><dd>With Air Nozzle 0.47KG/0.674KG, Standard 0.39KG/0.53KG</dd>
-          <dt class="font-medium">Style/Color</dt><dd>Blue, White, Dark Grey</dd>
-          <dt class="font-medium">Speed Settings</dt><dd>3 speeds, fast/slow/cool/hot adjustment</dd>
-          <dt class="font-medium">Frequency</dt><dd>50HZ</dd>
-          <dt class="font-medium">Power</dt><dd>2400W</dd>
-          <dt class="font-medium">Voltage</dt><dd>AC220V-240V</dd>
-          <dt class="font-medium">Overheat Protection</dt><dd>Supported</dd>
-        </dl>
-      </div>
-      <button onclick="document.getElementById('v10-modal').classList.remove('hidden')" class="bg-blue-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-700">View Details</button>
-    </div>
-    <!-- Model 6668 Hair Dryer Card -->
-    <div class="bg-white rounded-2xl shadow-lg p-6 max-w-xs w-full flex flex-col items-center">
-      <img src="model6668.jpg" alt="Model 6668 Hair Dryer" class="w-40 h-40 object-contain rounded-xl mb-4">
-      <h3 class="text-xl font-bold mb-2">Model 6668</h3>
-      <div class="w-full mb-4">
-        <dl class="grid grid-cols-2 gap-x-2 gap-y-1 text-sm">
-          <dt class="font-medium">Material</dt><dd>ABS</dd>
-          <dt class="font-medium">Cord Length</dt><dd>1.8M</dd>
-          <dt class="font-medium">Net/Gross Weight</dt><dd>465g/675g</dd>
-          <dt class="font-medium">Style/Color</dt><dd>Silver, Apricot, Purple</dd>
-          <dt class="font-medium">Speed Settings</dt><dd>3 speeds</dd>
-          <dt class="font-medium">Standard Accessories</dt><dd>Manual, Air Nozzle</dd>
-          <dt class="font-medium">Frequency</dt><dd>50HZ</dd>
-          <dt class="font-medium">Power</dt><dd>1500W</dd>
-          <dt class="font-medium">Voltage</dt><dd>AC220V</dd>
-          <dt class="font-medium">Overheat Protection</dt><dd>Supported</dd>
-        </dl>
-      </div>
-      <button onclick="document.getElementById('model6668-modal').classList.remove('hidden')" class="bg-blue-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-700">View Details</button>
     </div>
   </section>
 
