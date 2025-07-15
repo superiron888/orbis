@@ -12,6 +12,16 @@
   <nav class="bg-white shadow-sm sticky top-0 z-10 rounded-b-2xl mb-8 px-4 sm:px-8 py-4">
     <div class="flex items-center justify-between">
       <span class="font-bold text-xl text-blue-700">OrbisGate Export</span>
+      <!-- 语言切换按钮 -->
+      <div class="relative ml-4">
+        <button id="lang-btn" class="flex items-center px-2 py-1 rounded hover:bg-gray-100 focus:outline-none" aria-label="Pilih Bahasa">
+          <span class="text-xl">🌐</span>
+        </button>
+        <div id="lang-menu" class="absolute right-0 mt-2 w-36 bg-white rounded shadow-lg border hidden z-20">
+          <a href="index.html" class="block px-4 py-2 hover:bg-blue-100 font-semibold text-blue-600">Bahasa Indonesia</a>
+          <a href="index-en.html" class="block px-4 py-2 hover:bg-blue-100">English</a>
+        </div>
+      </div>
       <!-- 汉堡按钮（仅移动端显示） -->
       <button id="menu-btn" class="sm:hidden flex flex-col justify-center items-center w-10 h-10" aria-label="Buka Menu">
         <span class="block w-6 h-0.5 bg-gray-700 mb-1"></span>
@@ -312,6 +322,18 @@
   const mobileMenu = document.getElementById('mobile-menu');
   menuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
+  });
+  // 语言切换下拉菜单
+  const langBtn = document.getElementById('lang-btn');
+  const langMenu = document.getElementById('lang-menu');
+  langBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    langMenu.classList.toggle('hidden');
+  });
+  document.addEventListener('click', (e) => {
+    if (!langMenu.classList.contains('hidden')) {
+      langMenu.classList.add('hidden');
+    }
   });
 </script>
 </body>
